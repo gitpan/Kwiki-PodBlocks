@@ -1,12 +1,9 @@
 package Kwiki::PodBlocks;
-use strict;
-use warnings;
-use Kwiki::Plugin '-Base';
-use Kwiki::Installer '-base';
-our $VERSION = '0.10';
+use Kwiki::Plugin -Base;
+use Kwiki::Installer -base;
+our $VERSION = '0.11';
 
 const class_id => 'pod_blocks';
-const class_title => 'Pod Blocks';
 const css_file => 'pod_blocks.css';
 
 sub register {
@@ -38,7 +35,6 @@ sub pod2html {
     return $result;
 }
 
-1;
 package Kwiki::PodBlocks;
 __DATA__
 
